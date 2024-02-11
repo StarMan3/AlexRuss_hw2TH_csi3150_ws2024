@@ -1,0 +1,207 @@
+/* General layout */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background: linear-gradient(to right, #1f4037, #99f2c8); Gradient background */
+    background: linear-gradient(to right, #1f4037, #5cb88d); /* Gradient background */
+}
+
+header, main, footer {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+header {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo, navbar, and call to action */
+header h1 {
+    flex: 1;
+}
+
+/* .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+} */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 50px;
+}
+
+.navbar h2 {
+    color: beige;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul li {
+    list-style: none;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: rgb(16, 77, 44);
+    font-size: 16px;
+    margin-right: 25px;
+    transition: color 0.3s ease;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.navbar ul li:hover a{
+    color: crimson;
+}
+
+.navbar ul li:last-child a {
+    margin: 0;
+}
+
+
+
+.title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+
+    height: auto;
+    overflow: auto;
+}
+
+.title-container .left-side {
+    /* margin-right: 30%; */
+    width: 50vw;
+}
+
+.title-container p {
+    padding-right: 40px;
+}
+
+.title-container p a{
+    text-decoration: none;
+    color: beige;
+    font-size: 16px;
+    /* margin-right: 25px; */
+    transition: color 0.3s ease;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.title-container p a:hover{
+    color: crimson;
+}
+
+.title-container button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: cadetblue;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.title-container button:hover {
+    background-color: crimson;
+}
+
+.title-container .right-side {
+    /* margin-left: -5%; */
+    width: 40vh;
+}
+
+.title-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+
+
+/* Progress bar */
+.progressBar {
+    /* background-color: #f3f3f3; */
+    border-radius: 13px;
+    padding: 3px;
+}
+
+.progressBar progress {
+    width: 100%;
+    height: 20px;
+    border: none;
+    border-radius: 20px;
+    /* background-color: #4CAF50; */
+    /* color: #3a80f7; */
+    /* background-color: #3a80f7; */
+    /* last 3 lines here do nothing apparently */
+}
+
+
+/* ~~ Progress Bar Stuff */
+.progressBar progress {
+    /* border-radius: 20px; */
+    /* This will make the progress bar round */
+    background: beige;
+}
+
+.progressBar progress::-webkit-progress-bar {
+    border-radius: 20px; /* This will make the progress bar round in Webkit browsers like Chrome and Safari */
+    background: beige;
+}
+
+.progressBar progress::-webkit-progress-value {
+    border-radius: 20px; /* This will make the progress value (the filled part) round in Webkit browsers */
+    background: #3a80f7;
+}
+
+.progressBar progress::-moz-progress-bar {
+    border-radius: 20px; /* This will make the progress value (the filled part) round in Firefox */
+    background: orange;
+}
+
+/* .progressBar progress::content {
+    color: #3a80f7;
+} */
+/* ~~ End progress bar stuff */
+
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ff6347;
+}
+
+
+.education-experience {
+    background-color: #5cb88d;
+}

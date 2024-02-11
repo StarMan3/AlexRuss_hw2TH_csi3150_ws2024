@@ -6,6 +6,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon-16x16.png">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <!-- 
@@ -38,18 +39,18 @@ media sites that you want people to know of. This portion of the content should 
 of the content using a horizontal rule/line that should be visible on the page.
  -->
 
-<body>
+<body class="resume">
     <header>
-        <!-- Heading -->
-        <h1>Alex Russ - Résumé</h1>
-
-        <!-- Nav bar -->
-        <nav>
-            <a href="../index.html">Home</a>
-            <a href="my_resume.html">Résumé</a>
-            <a href="my_fun_facts.html">Fun Facts</a>
-        </nav>
-        <br>
+        <div class="navbar">
+            <!-- logo -->
+            <h2 class="logo">Alex Russ - Résumé</h2>
+            <!-- navbar -->
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="my_resume.html">Résumé</a></li>
+                <li><a href="my_fun_facts.html">Fun Facts</a></li>
+            </ul>
+        </div>
 
         <!-- Contact Info -->
         <h2>Contact Info</h2>
@@ -81,7 +82,7 @@ of the content using a horizontal rule/line that should be visible on the page.
         <section>
             <!-- Educational Experience -->
             <h2>Educational Experience</h2>
-            <table border="1">
+            <table class="education-experience" border="1">
                 <thead>
                     <tr>
                         <th>Start - End</th>
